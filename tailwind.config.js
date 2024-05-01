@@ -11,6 +11,18 @@ export default {
         card: '#F5F5F5',
       },
       keyframes: {
+        arrowUpDown: {
+          '0%': { transform: 'translateY(0px)' },
+          '10%': { transform: 'translateY(-2px)' },
+          '20%': { transform: 'translateY(-3x)' },
+          '30%': { transform: 'translateY(-4px)' },
+          '40%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(1px)' },
+          '60%': { transform: 'translateY(2px)' },
+          '70%': { transform: 'translateY(3px)' },
+          '80%': { transform: 'translateY(1px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
         arrow: {
           '0%': { transform: 'translate(0px)' },
           '10%': { transform: 'translate(5px)' },
@@ -25,7 +37,8 @@ export default {
         },
       },
       animation: {
-        'arrow-move': 'arrow 1s linear',
+        'arrow-move': 'arrow 1s linear infinite',
+        'arrow-upDown': 'arrowUpDown 1s linear infinite',
       },
     },
   },

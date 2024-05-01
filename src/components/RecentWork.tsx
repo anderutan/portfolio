@@ -1,11 +1,9 @@
 import Wrapper from './Wrapper';
-import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 
 interface Work {
   type: string;
   title: string;
-  liveWebsite: string;
-  github: string;
 }
 
 interface RecentWorkProps {
@@ -25,7 +23,7 @@ const RecentWork: React.FC<RecentWorkProps> = ({ props, handleClick }) => {
               className='px-4 border rounded-2xl border-gray-300 text-xl'
               onClick={() => handleClick(work.title)}
             >
-              <MdKeyboardDoubleArrowRight className='hover:animate-arrow-move' />
+              <MdKeyboardDoubleArrowUp className='hover:animate-arrow-upDown' />
             </button>
           </div>
         </div>
