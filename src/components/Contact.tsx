@@ -40,7 +40,7 @@ const Contact = () => {
           andrewtan1310@gmail.com
         </p>
       </div>
-      <div className='pt-2 border-t-2 flex gap-5'>
+      <div className='pt-3 border-t-2 flex gap-5'>
         {contactList.map((contact, index: number) => (
           <a
             href={contact.link}

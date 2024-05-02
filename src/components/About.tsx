@@ -1,4 +1,4 @@
-import photo from '../../public/Photo_Tan_Wee_Kiat.jpg';
+import photo from '/Photo_Tan_Wee_Kiat.jpg';
 import { IoLogoReact } from 'react-icons/io5';
 import { SiTailwindcss } from 'react-icons/si';
 import Wrapper from './Wrapper';
