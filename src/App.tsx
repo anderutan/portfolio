@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import BottomSection from './section/BottomSection';
 import MiddleSection from './section/MiddleSection';
@@ -9,6 +10,7 @@ function App() {
       <TopSection />
       <MiddleSection />
       <BottomSection />
+      <Footer />
     </div>
   );
 }

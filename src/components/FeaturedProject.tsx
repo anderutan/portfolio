@@ -24,36 +24,42 @@ const FeaturedProject = ({ props, show }: FeaturedProjectProps) => {
   }, [props, show]);
 
   return (
-    <Wrapper name='Featured Project'>
-      <div className='flex flex-col items-center gap-4'>
-        <img src={filteredWork.photo} alt='' className='h-[300px] w-[300px]' />
-        <p className='text-lg font-semibold self-start leading-none'>
-          Title: {filteredWork.title}
-        </p>
-        <p className='self-start text-sm text-f-second -mt-2'>
-          {filteredWork.intro}
-        </p>
-        <p className='self-start text-xs text-f-second -mt-2'>
-          *{filteredWork.tag}
-        </p>
-        <div className='flex justify-center gap-4'>
-          <a
-            href={filteredWork.liveWebsite}
-            target='_blank'
-            className='w-20 border border-gray-300 rounded-2xl bg-white text-center'
-          >
-            Live
-          </a>
-          <a
-            href={filteredWork.github}
-            target='_blank'
-            className='w-20 border border-gray-300 rounded-2xl bg-white text-center'
-          >
-            Github
-          </a>
+    <div id='project'>
+      <Wrapper name='Featured Project'>
+        <div className='flex flex-col items-center gap-4'>
+          <img
+            src={filteredWork.photo}
+            alt=''
+            className='h-[300px] w-[300px]'
+          />
+          <p className='text-lg font-semibold self-start leading-none'>
+            Title: {filteredWork.title}
+          </p>
+          <p className='self-start text-sm text-f-second -mt-2'>
+            {filteredWork.intro}
+          </p>
+          <p className='self-start text-xs text-f-second -mt-2'>
+            *{filteredWork.tag}
+          </p>
+          <div className='flex justify-center gap-6 my-3'>
+            <a
+              href={filteredWork.liveWebsite}
+              target='_blank'
+              className='w-20 border border-gray-300 rounded-2xl bg-white text-center'
+            >
+              Live
+            </a>
+            <a
+              href={filteredWork.github}
+              target='_blank'
+              className='w-20 border border-gray-300 rounded-2xl bg-white text-center'
+            >
+              Github
+            </a>
+          </div>
         </div>
-      </div>
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 };
 

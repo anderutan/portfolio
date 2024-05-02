@@ -29,10 +29,10 @@ const Contact = () => {
 
   return (
     <div className='px-6 py-4 my-3 bg-btn-main rounded-lg flex flex-col justify-between'>
-      <div className='px-3 py-1 bg-card inline-block text-sm rounded-xl mb-8 tracking-wide self-start'>
+      <div className='px-3 py-1 bg-card inline-block text-sm rounded-xl mb-16 tracking-wide self-start'>
         Contact
       </div>
-      <div className='mb-8'>
+      <div className='mb-16'>
         <p className='text-sm text-f-second'>
           Please react out if you have any questions!
         </p>

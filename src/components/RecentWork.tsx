@@ -19,12 +19,12 @@ const RecentWork: React.FC<RecentWorkProps> = ({ props, handleClick }) => {
           <p className='text-f-second text-xs'>{work.type}</p>
           <div className='flex justify-between'>
             <p className='text-lg font-medium'>{work.title}</p>
-            <button
-              className='px-4 border rounded-2xl border-gray-300 text-xl'
+            <a
+              className='px-4 border rounded-2xl border-gray-300 text-xl flex items-center'
               onClick={() => handleClick(work.title)}
             >
               <MdKeyboardDoubleArrowUp className='hover:animate-arrow-upDown' />
-            </button>
+            </a>
           </div>
         </div>
       ))}

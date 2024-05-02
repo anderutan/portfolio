@@ -3,7 +3,7 @@ import artWork from '/artWork.jpg';
 const Motto = () => {
   return (
     <div
-      className='px-6 py-4 my-3 rounded-lg h-[300px] relative flex flex-col justify-between'
+      className='px-6 py-4 my-3 rounded-lg h-[350px] relative flex flex-col justify-between'
       style={{
         backgroundImage: `url(${artWork})`,
         backgroundSize: 'cover',

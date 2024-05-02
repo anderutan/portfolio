@@ -35,7 +35,7 @@ export default function Experience() {
       ))}
       <div className='mt-7 mb-3 flex items-center justify-center'>
         <a
-          className='rounded-3xl relative h-[50px] w-40 overflow-hidden border border-f-second bg-white px-3 text-f-main shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-btn-main before:transition-all before:duration-500 hover:text-f-main hover:shadow-btn-main hover:before:left-0 hover:before:w-full flex items-center justify-center font-medium'
+          className='rounded-3xl relative h-[50px] w-40 overflow-hidden border border-f-second bg-white px-3 text-f-main shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-btn-main before:transition-all before:duration-500 hover:text-f-main hover:shadow-btn-main hover:before:left-0 hover:before:w-full flex items-center justify-center font-medium text-sm'
           href={resumePDF}
           target='_blank'
         >
