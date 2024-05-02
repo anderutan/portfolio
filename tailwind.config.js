@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -35,10 +37,15 @@ export default {
           '80%': { transform: 'translate(0px)' },
           '100%': { transform: 'translate(0px)' },
         },
+        'slide-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         'arrow-move': 'arrow 1s linear infinite',
         'arrow-upDown': 'arrowUpDown 1s linear infinite',
+        'slide-left-infinite': 'slide-left 15s linear infinite',
       },
     },
   },

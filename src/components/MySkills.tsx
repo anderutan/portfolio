@@ -1,35 +1,64 @@
 import Wrapper from './Wrapper';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io5';
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 
 const MySkills = () => {
+  const array = Array.from({ length: 2 });
+  const iconClass = 'inline h-16';
   const skillSets = [
     {
       language: 'HTML',
-      icon: <FaHtml5 />,
-      color: 'text-orange-400',
+      icon: <FaHtml5 className={iconClass} />,
+      color: 'text-orange-500',
     },
     {
       language: 'CSS',
-      icon: <FaCss3Alt />,
-      color: 'text-blue-400',
+      icon: <FaCss3Alt className={iconClass} />,
+      color: 'text-blue-600',
     },
     {
       language: 'JavaScript',
-      icon: <IoLogoJavascript />,
-      color: 'text-yellow-400',
+      icon: <SiJavascript className={iconClass} />,
+      color: 'text-yellow-500',
+    },
+    {
+      language: 'React',
+      icon: <FaReact className={iconClass} />,
+      color: 'text-blue-400',
+    },
+    {
+      language: 'Github',
+      icon: <FaGithub className={iconClass} />,
+      color: 'text-violet-400',
+    },
+    {
+      language: 'Figma',
+      icon: <FaFigma className={iconClass} />,
+      color: 'text-pink-500',
+    },
+    {
+      language: 'TailwindCSS',
+      icon: <SiTailwindcss className={iconClass} />,
+      color: 'text-blue-500',
     },
   ];
   return (
     <Wrapper name='My Skills'>
-      <div className='flex gap-5 overflow-hidden'>
-        {skillSets.map((skill) => (
+      {/* https://www.uibun.dev/blog/tailwindcss-infinite-carousel */}
+      <div className='overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_50px,white_calc(100%-50px),_transparent_100%)]'>
+        {array.map((_, index) => (
           <div
-            className={`flex items-center text-f-second text-3xl font-semibold ${skill.color}`}
+            className='animate-slide-left-infinite group-hover:animation-pause inline-block w-max'
+            key={index}
           >
-            {skill.icon}
-            <p className='ml-1'>{skill.language}</p>
+            {skillSets.map((skill, index) => (
+              <div
+                className={`${skill.color} mx-6 inline text-3xl font-bold`}
+                key={index}
+              >
+                {skill.icon} {skill.language}
+              </div>
+            ))}
           </div>
         ))}
       </div>
