@@ -12,12 +12,12 @@ const Motto = () => {
       }}
     >
       <div>
-        <div className='absolute inset-0 bg-black opacity-60'></div>
+        <div className='absolute inset-0 bg-black opacity-50'></div>
         <div className='px-3 py-1 bg-btn-main inline-block text-sm rounded-xl mb-8 tracking-wide relative'>
           Motto
         </div>
       </div>
-      <p className='text-lg text-white font-medium relative'>
+      <p className='text-lg text-white font-medium relative leading-5'>
         "God, grant me the serenity to accept the things I cannot change, the
         courage to change the things I can, and the wisdom to know the
         difference."

@@ -1,3 +1,4 @@
+import Contact from '../components/Contact';
 import Motto from '../components/Motto';
 import MySkills from '../components/MySkills';
 
@@ -6,6 +7,7 @@ const BottomSection = () => {
     <div>
       <MySkills />
       <Motto />
+      <Contact />
     </div>
   );
 };
