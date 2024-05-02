@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import RecentWork from '../components/RecentWork';
 import FeaturedProject from '../components/FeaturedProject';
-import homeWPPhoto from '../../public/Home_Workout_Plan_ShowCase.png';
-import calculatorAppPhoto from '../../public/Calculator_App_ShowCase.png';
+import homeWPPhoto from '/Home_Workout_Plan_ShowCase.png';
+import calculatorAppPhoto from '/Calculator_App_ShowCase.png';
 
 export default function MiddleSection() {
   const recentWorkList = [

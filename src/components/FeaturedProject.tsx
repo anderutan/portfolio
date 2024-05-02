@@ -1,5 +1,4 @@
 import Wrapper from './Wrapper';
-import homeWPPhoto from '../../public/Home_Workout_Plan_ShowCase.png';
 import { useEffect, useState } from 'react';
 
 interface Work {
@@ -22,7 +21,7 @@ const FeaturedProject = ({ props, show }: FeaturedProjectProps) => {
   useEffect(() => {
     const filtered = props.filter((prop) => prop.title.includes(show));
     setFilteredWork(filtered[0]);
-  }, [show]);
+  }, [props, show]);
 
   return (
     <Wrapper name='Featured Project'>
