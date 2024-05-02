@@ -1,5 +1,5 @@
 import resumePDF from '../../public/Resume_Tan_Wee_Kiat.pdf';
-import Wrapper from './Wrapper';
+import Wrapper from '../util/Wrapper';
 
 export default function Experience() {
   const experienceList = [

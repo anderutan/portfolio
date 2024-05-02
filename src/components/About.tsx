@@ -1,7 +1,7 @@
 import photo from '/Photo_Tan_Wee_Kiat.jpg';
 import { IoLogoReact } from 'react-icons/io5';
 import { SiTailwindcss } from 'react-icons/si';
-import Wrapper from './Wrapper';
+import Wrapper from '../util/Wrapper';
 
 export default function About() {
   return (

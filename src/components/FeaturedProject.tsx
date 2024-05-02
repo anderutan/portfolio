@@ -1,6 +1,6 @@
-import Wrapper from './Wrapper';
+import Wrapper from '../util/Wrapper';
 import { useEffect, useState } from 'react';
-
+import { motion } from 'framer-motion';
 interface Work {
   title: string;
   liveWebsite: string;
@@ -27,11 +27,15 @@ const FeaturedProject = ({ props, show }: FeaturedProjectProps) => {
     <div id='project'>
       <Wrapper name='Featured Project'>
         <div className='flex flex-col items-center gap-4'>
-          <img
-            src={filteredWork.photo}
-            alt=''
-            className='h-[300px] w-[300px]'
-          />
+          <motion.div
+            whileHover={{ scale: 1.2, marginTop: 25, marginBottom: 30 }}
+          >
+            <img
+              src={filteredWork.photo}
+              alt=''
+              className='h-[300px] w-[300px]'
+            />
+          </motion.div>
           <p className='text-lg font-semibold self-start leading-none'>
             Title: {filteredWork.title}
           </p>

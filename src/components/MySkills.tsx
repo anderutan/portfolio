@@ -1,4 +1,4 @@
-import Wrapper from './Wrapper';
+import Wrapper from '../util/Wrapper';
 import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 

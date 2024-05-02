@@ -1,4 +1,4 @@
-import Wrapper from './Wrapper';
+import Wrapper from '../util/Wrapper';
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 
 interface Work {
