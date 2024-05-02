@@ -45,7 +45,7 @@ export default {
       animation: {
         'arrow-move': 'arrow 1s linear infinite',
         'arrow-upDown': 'arrowUpDown 1s linear infinite',
-        'slide-left-infinite': 'slide-left 15s linear infinite',
+        'slide-left-infinite': 'slide-left 20s linear infinite',
       },
     },
   },
