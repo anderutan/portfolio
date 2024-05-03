@@ -5,8 +5,12 @@ import { FaGithub } from 'react-icons/fa';
 import { RiWhatsappLine, RiWhatsappFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 
-const Contact = ({ mdStyle }) => {
-  const [hover, setHover] = useState(null);
+interface ContactProps {
+  mdStyle: string;
+}
+
+const Contact: React.FC<ContactProps> = ({ mdStyle }) => {
+  const [hover, setHover] = useState<number | null>(null);
   const contactList = [
     {
       platform: 'Email',

@@ -1,7 +1,11 @@
 import artWork from '/artWork.jpg';
 import { motion } from 'framer-motion';
 
-const Motto = ({ mdStyle }) => {
+interface MottoProps {
+  mdStyle: string;
+}
+
+const Motto: React.FC<MottoProps> = ({ mdStyle }) => {
   return (
     <motion.div
       className={`px-6 py-4 my-3 md:my-0 rounded-lg h-[350px] md:h-full relative flex flex-col justify-between ${mdStyle}`}

@@ -3,7 +3,11 @@ import { IoLogoReact } from 'react-icons/io5';
 import { SiTailwindcss } from 'react-icons/si';
 import Wrapper from '../util/Wrapper';
 
-export default function About({ mdStyle }) {
+interface AboutProps {
+  mdStyle: string;
+}
+
+const About: React.FC<AboutProps> = ({ mdStyle }) => {
   return (
     <Wrapper name={'About'} mdStyle={mdStyle}>
       <img
@@ -25,4 +29,6 @@ export default function About({ mdStyle }) {
       </p>
     </Wrapper>
   );
-}
+};
+
+export default About;
