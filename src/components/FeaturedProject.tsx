@@ -26,7 +26,7 @@ const FeaturedProject = ({ props, show, mdStyle }: FeaturedProjectProps) => {
 
   return (
     <div id='project' className={mdStyle}>
-      <Wrapper name='Featured Project'>
+      <Wrapper name='Featured Project' mdStyle=''>
         <div className='flex flex-col items-center mb-2 gap-6 md:flex-row'>
           <motion.div whileHover={{ scale: 1.2, margin: 30 }}>
             <img

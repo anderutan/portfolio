@@ -2,7 +2,11 @@ import Wrapper from '../util/Wrapper';
 import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 
-const MySkills = ({ mdStyle }) => {
+interface MySkillsProp {
+  mdStyle: string;
+}
+
+const MySkills: React.FC<MySkillsProp> = ({ mdStyle }) => {
   const array = Array.from({ length: 2 });
   const iconClass = 'inline h-16';
   const skillSets = [

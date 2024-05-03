@@ -4,9 +4,19 @@ import FeaturedProject from '../components/FeaturedProject';
 import homeWPPhoto from '/Home_Workout_Plan_ShowCase.png';
 import calculatorAppPhoto from '/Calculator_App_ShowCase.png';
 
+interface WorkItem {
+  type: string;
+  title: string;
+  liveWebsite: string;
+  github: string;
+  photo: string;
+  intro: string;
+  tag: string;
+}
+
 export default function MiddleSection() {
-  const ref = useRef(null);
-  const recentWorkList = [
+  const ref = useRef<HTMLDivElement>(null);
+  const recentWorkList: WorkItem[] = [
     {
       type: 'Personal Project',
       title: 'Home Workout Plan',

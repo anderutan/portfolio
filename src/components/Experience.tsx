@@ -20,7 +20,7 @@ export default function Experience() {
     },
   ];
   return (
-    <Wrapper name={'Experience'}>
+    <Wrapper name={'Experience'} mdStyle=''>
       {experienceList.map((experience, index) => (
         <div
           key={index}
