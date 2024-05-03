@@ -10,12 +10,12 @@ export default function Experience() {
     },
     {
       position: 'Digital Marketing Executive',
-      company: 'Econsave Cash & Carry Sdn Bhd',
+      company: 'Econsave',
       year: '07/2019 - 03/2021',
     },
     {
       position: 'Electronic Item Import Purchaser',
-      company: 'Econsave Cash & Carry Sdn Bhd',
+      company: 'Econsave',
       year: '08/2018 - 12/2018',
     },
   ];
@@ -26,8 +26,8 @@ export default function Experience() {
           key={index}
           className={`py-4 border-b-2 ${index === 0 ? 'pt-0' : ''}`}
         >
-          <p className='mb-1 text-sm'>{experience.position}</p>
-          <div className='text-xs text-f-second flex justify-between'>
+          <p className='mb-1 text-sm md:text-base'>{experience.position}</p>
+          <div className='text-xs text-f-second flex justify-between md:text-sm'>
             <p>{experience.company}</p>
             <p>{experience.year}</p>
           </div>

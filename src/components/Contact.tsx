@@ -3,8 +3,9 @@ import { MdOutlineEmail, MdEmail } from 'react-icons/md';
 import { FiGithub } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 import { RiWhatsappLine, RiWhatsappFill } from 'react-icons/ri';
+import { motion } from 'framer-motion';
 
-const Contact = () => {
+const Contact = ({ mdStyle }) => {
   const [hover, setHover] = useState(null);
   const contactList = [
     {
@@ -28,7 +29,11 @@ const Contact = () => {
   ];
 
   return (
-    <div className='px-6 py-4 my-3 bg-btn-main rounded-lg flex flex-col justify-between'>
+    <motion.div
+      className={`px-6 py-4 my-3 md:my-0 bg-btn-main rounded-lg flex flex-col justify-between ${mdStyle}`}
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+    >
       <div className='px-3 py-1 bg-card inline-block text-sm rounded-xl mb-16 tracking-wide self-start'>
         Contact
       </div>
@@ -55,7 +60,7 @@ const Contact = () => {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

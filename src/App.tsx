@@ -5,7 +5,7 @@ import MiddleSection from './section/MiddleSection';
 import TopSection from './section/TopSection';
 function App() {
   return (
-    <div className='p-5'>
+    <div className='p-5 max-w-[1000px] mx-auto '>
       <Header />
       <TopSection />
       <MiddleSection />

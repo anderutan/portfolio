@@ -2,7 +2,7 @@ import Wrapper from '../util/Wrapper';
 import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 
-const MySkills = () => {
+const MySkills = ({ mdStyle }) => {
   const array = Array.from({ length: 2 });
   const iconClass = 'inline h-16';
   const skillSets = [
@@ -43,7 +43,7 @@ const MySkills = () => {
     },
   ];
   return (
-    <Wrapper name='My Skills'>
+    <Wrapper name='My Skills' mdStyle={mdStyle}>
       {/* https://www.uibun.dev/blog/tailwindcss-infinite-carousel */}
       <div className='overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_50px,white_calc(100%-50px),_transparent_100%)] py-5'>
         {array.map((_, index) => (

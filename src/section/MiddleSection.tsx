@@ -35,9 +35,17 @@ export default function MiddleSection() {
   }
 
   return (
-    <div ref={ref}>
-      <FeaturedProject props={recentWorkList} show={showWork} />
-      <RecentWork props={recentWorkList} handleClick={handleButtonClick} />
+    <div ref={ref} className='md:grid grid-cols-3 gap-3'>
+      <FeaturedProject
+        props={recentWorkList}
+        show={showWork}
+        mdStyle={'md:col-start-2 col-end-4'}
+      />
+      <RecentWork
+        props={recentWorkList}
+        handleClick={handleButtonClick}
+        mdStyle={'md:col-start-1 row-start-1'}
+      />
     </div>
   );
 }

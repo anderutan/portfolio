@@ -3,15 +3,15 @@ import { IoLogoReact } from 'react-icons/io5';
 import { SiTailwindcss } from 'react-icons/si';
 import Wrapper from '../util/Wrapper';
 
-export default function About() {
+export default function About({ mdStyle }) {
   return (
-    <Wrapper name={'About'}>
+    <Wrapper name={'About'} mdStyle={mdStyle}>
       <img
         src={photo}
         alt=''
         className='rounded-full h-28 w-28 object-cover object-top mb-5'
       />
-      <p className='text-lg'>
+      <p className='text-lg md:text-2xl md:mt-10'>
         Skilled in{' '}
         <span className='inline-flex items-baseline font-bold text-[#087EA4]'>
           <IoLogoReact className='mr-1 self-center' /> ReactJS

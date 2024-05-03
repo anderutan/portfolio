@@ -1,15 +1,19 @@
 import artWork from '/artWork.jpg';
+import { motion } from 'framer-motion';
 
-const Motto = () => {
+const Motto = ({ mdStyle }) => {
   return (
-    <div
-      className='px-6 py-4 my-3 rounded-lg h-[350px] relative flex flex-col justify-between'
+    <motion.div
+      className={`px-6 py-4 my-3 md:my-0 rounded-lg h-[350px] md:h-full relative flex flex-col justify-between ${mdStyle}`}
       style={{
         backgroundImage: `url(${artWork})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         overflow: 'hidden',
       }}
+      initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      whileHover={{ scale: 1.1, margin: 10 }}
     >
       <div>
         <div className='absolute inset-0 bg-black opacity-50'></div>
@@ -17,12 +21,12 @@ const Motto = () => {
           Motto
         </div>
       </div>
-      <p className='text-lg text-white font-medium relative leading-5'>
+      <p className='text-lg text-white font-medium relative leading-5 md:text-xl'>
         "God, grant me the serenity to accept the things I cannot change, the
         courage to change the things I can, and the wisdom to know the
         difference."
       </p>
-    </div>
+    </motion.div>
   );
 };
 
