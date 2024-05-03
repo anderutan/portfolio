@@ -33,9 +33,9 @@ const RecentWork: React.FC<RecentWorkProps> = ({
               onClick={() => handleClick(work.title)}
             >
               {width > 767 ? (
-                <MdKeyboardDoubleArrowRight className='hover:animate-arrow-move' />
+                <MdKeyboardDoubleArrowRight className='hover:animate-arrow-move cursor-pointer' />
               ) : (
-                <MdKeyboardDoubleArrowUp className='hover:animate-arrow-upDown' />
+                <MdKeyboardDoubleArrowUp className='hover:animate-arrow-upDown cursor-pointer' />
               )}
             </a>
           </div>

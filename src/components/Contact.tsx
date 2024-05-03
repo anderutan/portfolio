@@ -12,7 +12,7 @@ const Contact = ({ mdStyle }) => {
       platform: 'Email',
       icon: <MdOutlineEmail />,
       iconHover: <MdEmail />,
-      link: 'andrewtan1310@gmail.com',
+      link: 'mailto: andrewtan1310@gmail.com',
     },
     {
       platform: 'Github',
