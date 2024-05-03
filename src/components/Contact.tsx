@@ -34,14 +34,14 @@ const Contact = ({ mdStyle }) => {
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
     >
-      <div className='px-3 py-1 bg-card inline-block text-sm rounded-xl mb-16 tracking-wide self-start'>
+      <div className='px-3 py-1 bg-card inline-block text-sm rounded-xl mb-16 tracking-wide self-start md:text-base'>
         Contact
       </div>
       <div className='mb-16'>
-        <p className='text-sm text-f-second'>
+        <p className='text-sm text-f-second md:text-base'>
           Please react out if you have any questions!
         </p>
-        <p className='text-xl font-semibold hover:text-f-second hover:cursor-pointer'>
+        <p className='text-xl font-semibold hover:text-f-second hover:cursor-pointer md:text-2xl'>
           andrewtan1310@gmail.com
         </p>
       </div>
@@ -50,7 +50,7 @@ const Contact = ({ mdStyle }) => {
           <a
             href={contact.link}
             target='_blank'
-            className='text-sm flex items-center hover:font-bold'
+            className='text-sm flex items-center hover:font-bold md:text-lg'
             onMouseOver={() => setHover(index)}
             onMouseOut={() => setHover(null)}
             key={index}

@@ -17,11 +17,11 @@ const Motto = ({ mdStyle }) => {
     >
       <div>
         <div className='absolute inset-0 bg-black opacity-50'></div>
-        <div className='px-3 py-1 bg-btn-main inline-block text-sm rounded-xl mb-8 tracking-wide relative'>
+        <div className='px-3 py-1 bg-btn-main inline-block text-sm rounded-xl mb-8 tracking-wide relative md:text-base'>
           Motto
         </div>
       </div>
-      <p className='text-lg text-white font-medium relative leading-5 md:text-xl'>
+      <p className='text-xl text-white font-medium relative leading-5 md:text-2xl'>
         "God, grant me the serenity to accept the things I cannot change, the
         courage to change the things I can, and the wisdom to know the
         difference."
