@@ -3,6 +3,7 @@ import RecentWork from '../components/RecentWork';
 import FeaturedProject from '../components/FeaturedProject';
 import homeWPPhoto from '/Home_Workout_Plan_ShowCase.png';
 import calculatorAppPhoto from '/Calculator_App_ShowCase.png';
+import lobeTourClonePhoto from '/Lobe_Tour_Clone.png';
 
 interface WorkItem {
   type: string;
@@ -33,6 +34,15 @@ export default function MiddleSection() {
       github: 'https://github.com/anderutan/calculator-app',
       photo: calculatorAppPhoto,
       intro: 'A simple calculator app with three color theme.',
+      tag: 'React, Tailwind CSS',
+    },
+    {
+      type: 'frontendpractice.com Project',
+      title: 'Lobe Tour Page',
+      liveWebsite: 'https://lobe-clone-andrew-tan.netlify.app/',
+      github: 'https://github.com/anderutan/lobe-clone',
+      photo: lobeTourClonePhoto,
+      intro: 'Web page clone from "https://www.lobe.ai/tour"',
       tag: 'React, Tailwind CSS',
     },
   ];
